@@ -1,70 +1,125 @@
-# Getting Started with Create React App
+# React Todo App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A modern and responsive Todo application built with React.
+
+This project helps users quickly capture tasks, track progress, and stay organized with a clean UI and fast interactions.
+
+## Live Repository
+
+[https://github.com/Yashwanth1943/todo](https://github.com/Yashwanth1943/todo)
+
+## Features
+
+- Add, complete, and delete todos
+- Real-time search filtering
+- Status filters: `All`, `Active`, `Completed`
+- Clear all completed tasks with one click
+- Persistent storage using `localStorage`
+- Responsive layout for desktop and mobile
+- Accessibility-focused controls (labels, focus states, semantic elements)
+
+## Tech Stack
+
+- React 19
+- JavaScript (ES6+)
+- CSS3
+- React Testing Library + Jest
+- Create React App
+
+## Project Structure
+
+```text
+src/
+  features/
+    todos/
+      components/
+        TodoApp.jsx
+        TodoInput.jsx
+        TodoList.jsx
+        TodoItem.jsx
+      hooks/
+        useTodos.js
+  App.js
+  App.css
+  App.test.js
+  index.css
+```
+
+## Getting Started
+
+### Prerequisites
+
+- Node.js (v18 or above recommended)
+- npm
+
+### Installation
+
+```bash
+git clone https://github.com/Yashwanth1943/todo.git
+cd todo
+npm install
+```
+
+### Run Locally
+
+```bash
+npm start
+```
+
+Open `http://localhost:3000` in your browser.
+
+### Run Tests
+
+```bash
+npm test
+```
+
+### Production Build
+
+```bash
+npm run build
+```
 
 ## Available Scripts
 
-In the project directory, you can run:
+- `npm start` - Starts the development server
+- `npm test` - Runs test suite
+- `npm run build` - Builds the app for production
+- `npm run eject` - Ejects CRA config (irreversible)
 
-### `npm start`
+## Quality and Testing
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+The project includes behavior-driven tests for key flows:
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- Renders initial UI state
+- Adds a todo
+- Toggles completion state
+- Removes a todo
+- Filters todos via real-time search
 
-### `npm test`
+## Roadmap
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Potential future enhancements:
 
-### `npm run build`
+- Edit existing todo items
+- Drag-and-drop reordering
+- Due dates and priority levels
+- Dark mode toggle
+- Backend sync and user authentication
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Contributing
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Contributions are welcome.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+1. Fork the repository
+2. Create a feature branch
+3. Commit your changes
+4. Open a pull request
 
-### `npm run eject`
+## License
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+This project is open-source and available under the [MIT License](LICENSE).
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+---
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Built with React and attention to clean frontend architecture.
