@@ -11,5 +11,6 @@ body,
 body {
   margin: 0;
   font-family: 'Avenir Next', 'Trebuchet MS', 'Segoe UI', sans-serif;
-  color: #1f2f3d;
+  color: #263746;
+  background-color: #c7cccf;
 }
